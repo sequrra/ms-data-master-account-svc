@@ -7,7 +7,7 @@ spring:
   application:
     name: ms-data-master-account
   datasource:
-    url: jdbc:postgresql://localhost:5432/sequrra-db?currentSchema=ms-data-master-account
+    url: jdbc:postgresql://172.96.190.219:5432/sequrra-db?currentSchema=ms-data-master-account
     username: postgres
     password: Cl100299
     hikari:
