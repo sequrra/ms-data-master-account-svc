@@ -1,7 +1,6 @@
 package com.ms.data.master.account.service;
 
 import com.ms.data.master.account.model.Account;
-import com.ms.data.master.account.model.dto.account.AccountDTO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -3,6 +3,7 @@ package com.ms.data.master.account.config;
 import com.ms.data.master.account.respository.AuthenticationRepository;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -17,7 +18,8 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 @RequiredArgsConstructor
 public class ApplicationConfiguration {
-    private final AuthenticationRepository authenticationRepository;
+    @Autowired
+    private AuthenticationRepository authenticationRepository;
 
     @Bean
     UserDetailsService userDetailsService() {
