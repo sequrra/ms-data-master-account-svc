@@ -1,7 +1,7 @@
 server:
   servlet:
     context-path: /ms-data-master-account/api/v1
-  port: 8080
+  port: 8082
 
 spring:
   application:
@@ -15,13 +15,6 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 300000
     driver-class-name: org.postgresql.Driver
-
-  servlet:
-    multipart:
-      enabled: true
-      max-file-size: 10MB  # Adjust this according to your needs
-      max-request-size: 20MB
-
   flyway:
     url: jdbc:postgresql://localhost:5432/sequrra-db?currentSchema=ms-data-master-account
     user: postgres
@@ -33,25 +26,13 @@ spring:
     baseline-version: 1.1
     locations: classpath:db/migration
     out-of-order: true
-
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     hibernate:
       ddl-auto: none
 
-  mail:
-    host: mail.privateemail.com
-    port: 465
-    username: info@ugkslimousine.com
-    password: Kowping.8888
-    protocol: smtp
-    properties:
-      mail:
-        smpt:
-          auth: true
-          starttls:
-            enable: true
+# Security
   security:
     oauth2:
       client:
@@ -88,7 +69,7 @@ oss:
   access-key: 5Q6I158TPIDBOLAAB2V0
   bucket: ugks-oss
 
-
+#endpoint-configuration
 endpoint:
   authentication:
     base: /authentication

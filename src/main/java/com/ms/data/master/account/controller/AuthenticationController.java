@@ -59,7 +59,6 @@ public class AuthenticationController {
         var authenticatedUser = authenticationService.authenticate(loginRequestDTO);
         var token = jwtService.generateToken(authenticatedUser);
 //        authEventProducer.sendAuthEvent(String.valueOf(authenticatedUser.getId()), token, loginRequestDTO.getEmail(), authenticatedUser.getAccountType());
-
         return ResponseEntity.ok(new LoginResponseDTO()
                 .setId(authenticatedUser.getId())
                 .setToken(token)
