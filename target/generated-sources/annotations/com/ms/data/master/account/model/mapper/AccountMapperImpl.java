@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-19T19:35:06+0800",
+    date = "2025-06-23T02:11:03+0800",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.11 (JetBrains s.r.o.)"
 )
 public class AccountMapperImpl implements AccountMapper {
