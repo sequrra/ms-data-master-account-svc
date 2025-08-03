@@ -4,10 +4,10 @@ server:
   port: 8082
 
 spring:
+  profiles:
+    active: prod
   application:
     name: ms-data-master-account
-  profile:
-    active: prod  
   datasource:
     url: jdbc:postgresql://172.96.190.219:5432/sequrra-db-prod?currentSchema=ms-data-master-account
     username: postgres
